@@ -5,11 +5,17 @@
   "license": "SEE LICENSE IN LICENSE",
   "author": "Róbert Darida",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "prettier": "prettier . --check"
+    "prettier": "prettier . --check",
+    "lint": "tsc",
+    "prebuild": "rimraf dist",
+    "build": "tsup src/index.ts --format cjs --dts --minify"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
   "keywords": []
