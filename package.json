@@ -1,0 +1,13 @@
+{
+  "name": "texturepacker",
+  "version": "0.0.0",
+  "description": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Róbert Darida",
+  "main": "dist/index.js",
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "keywords": []
+}
