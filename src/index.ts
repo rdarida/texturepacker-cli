@@ -1,3 +1,3 @@
-export const log = (...args: any[]) => {
-  console.log(...args);
-};
+export function greet(): string {
+  return 'Hello, TexturePacker!';
+}
