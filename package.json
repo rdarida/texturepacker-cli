@@ -5,8 +5,11 @@
   "license": "SEE LICENSE IN LICENSE",
   "author": "Róbert Darida",
   "main": "dist/index.js",
-  "scripts": {},
+  "scripts": {
+    "prettier": "prettier . --check"
+  },
   "devDependencies": {
+    "prettier": "^3.4.2",
     "typescript": "^5.7.2"
   },
   "keywords": []
