@@ -14,6 +14,7 @@
     ".editorconfig": true,
     ".prettierignore": true,
     ".prettierrc": true,
+    "jest.config.js": true,
     "LICENSE": true,
     "package-lock.json": true
   }
