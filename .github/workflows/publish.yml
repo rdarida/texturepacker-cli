@@ -1,0 +1,30 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+
+      - name: Set up Git user
+        run: |
+          git config --global user.name "Róbert Darida"
+          git config --global user.email "rdarida@users.noreply.github.com"
+
+      - run: |
+          npm ci
+          npm run lint
+          npm test
+          npm run release
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
