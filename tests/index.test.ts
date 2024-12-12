@@ -6,6 +6,6 @@ describe('Test exports', () => {
   });
 
   it('should return with "Hello, TexturePacker!"', () => {
-    expect(greet()).toBe('Hello, TexturaPacker!');
+    expect(greet()).toBe('Hello, TexturePacker!');
   });
 });
