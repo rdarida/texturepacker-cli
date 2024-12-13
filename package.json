@@ -1,7 +1,7 @@
 {
-  "name": "texturepacker",
-  "version": "0.0.6",
-  "description": "NodeJS command line tool for TexturePacker.",
+  "name": "texturepacker-cli",
+  "version": "0.0.0",
+  "description": "NodeJS command line interface for TexturePacker.",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Róbert Darida",
   "main": "dist/index.js",
