@@ -1,3 +1,7 @@
+/**
+ * Pack
+ * @returns pack
+ */
 export function pack(): string {
   return 'pack';
 }
