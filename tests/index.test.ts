@@ -1,11 +1,19 @@
-import { greet } from '../src/index';
+import { pack, unpack } from '../src/index';
 
 describe('Test exports', () => {
-  it('should be truthy', () => {
-    expect(greet).toBeTruthy();
+  test('pack should be exported', () => {
+    expect(pack).toBeTruthy();
   });
 
-  it('should return with "Hello, TexturePacker!"', () => {
-    expect(greet()).toBe('Hello, TexturePacker!');
+  test('pack should return with "pack"', () => {
+    expect(pack()).toBe('pack');
+  });
+
+  test('unpack should be exported', () => {
+    expect(unpack).toBeTruthy();
+  });
+
+  test('unpack should return with "unpack"', () => {
+    expect(unpack()).toBe('unpack');
   });
 });

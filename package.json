@@ -9,13 +9,16 @@
   "files": [
     "dist"
   ],
+  "bin": {
+    "texture": "node dist/cli.js"
+  },
   "scripts": {
     "lint": "tsc",
     "prettier": "prettier . --check",
     "pretest": "rimraf coverage",
     "test": "jest",
     "prebuild": "rimraf dist",
-    "build": "tsup src/index.ts --format cjs --dts --minify",
+    "build": "tsup src/index.ts src/cli.ts --format cjs --dts --minify",
     "prepublishOnly": "npm run build",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin HEAD"
