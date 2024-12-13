@@ -6,13 +6,13 @@
   "author": "Róbert Darida",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "texture": "./dist/cli.js",
+    "texturepacker-cli": "./dist/cli.js"
+  },
   "files": [
     "dist"
   ],
-  "bin": {
-    "texturepacker-cli": "./dist/cli.js",
-    "texture": "./dist/cli.js"
-  },
   "scripts": {
     "lint": "tsc",
     "prettier": "prettier . --check",
