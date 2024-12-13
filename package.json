@@ -1,6 +1,6 @@
 {
   "name": "texturepacker",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "NodeJS command line tool for TexturePacker.",
   "license": "SEE LICENSE IN LICENSE",
   "author": "Róbert Darida",
