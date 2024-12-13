@@ -10,7 +10,8 @@
     "dist"
   ],
   "bin": {
-    "texture": "node dist/cli.js"
+    "texturepacker-cli": "node ./dist/cli.js",
+    "texture": "node ./dist/cli.js"
   },
   "scripts": {
     "lint": "tsc",
