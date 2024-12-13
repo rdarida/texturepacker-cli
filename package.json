@@ -6,6 +6,9 @@
   "author": "Róbert Darida",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "tsc",
     "prettier": "prettier . --check",
