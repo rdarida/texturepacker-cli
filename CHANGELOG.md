@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.5 (2024-12-13)
+
+
+### Features
+
+* update cli.ts ([d7eab1e](https://github.com/rdarida/texturepacker-cli/commit/d7eab1ec3655494f5622dcaca88a5b2a58d84ba5))
+
 ### 0.0.4 (2024-12-13)
 
 ### 0.0.3 (2024-12-13)
