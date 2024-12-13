@@ -2,7 +2,7 @@
   "name": "texturepacker-cli",
   "version": "0.0.1",
   "description": "NodeJS command line interface for TexturePacker.",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "author": "Róbert Darida",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
