@@ -2,6 +2,5 @@
 import { pack, unpack } from '.';
 
 (() => {
-  console.log(pack());
-  console.log(unpack());
+  [pack(), unpack()].forEach(v => console.log(v));
 })();
