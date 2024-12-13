@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.6 (2024-12-13)
+
+
+### Features
+
+* use yargs in cli.ts ([df59ee6](https://github.com/rdarida/texturepacker-cli/commit/df59ee6de04d0ae7bba74b8274494f2fb4cc1e02))
+
 ### 0.0.5 (2024-12-13)
 
 
