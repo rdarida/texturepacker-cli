@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.8 (2024-12-15)
+
+
+### Features
+
+* generate docs and push into gh-pages ([a7441bd](https://github.com/rdarida/texturepacker-cli/commit/a7441bd83bbc61ea73d46e1323de41a729d592ff))
+
 ### 0.0.7 (2024-12-15)
 
 ### 0.0.6 (2024-12-13)
