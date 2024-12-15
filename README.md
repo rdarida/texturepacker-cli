@@ -18,10 +18,13 @@
     <strong>Resources</strong>
   </summary>
 
-- [Running TexturePacker from Commandline | TexturePacker](https://www.codeandweb.com/texturepacker/documentation/commandline)
-- [Texture Settings | TexturePacker](https://www.codeandweb.com/texturepacker/documentation/texture-settings)
-- [Blazing Fast Tips: Publishing to NPM | YouTube](https://www.youtube.com/watch?v=eh89VE3Mk5g)
-- [mattpocock/pkg-demo | GitHub](https://github.com/mattpocock/pkg-demo)
+- **TexturePacker**
+  * [Running TexturePacker from Commandline](https://www.codeandweb.com/texturepacker/documentation/commandline)
+  * [Texture Settings](https://www.codeandweb.com/texturepacker/documentation/texture-settings)
+
+- **Etc**
+  * [Blazing Fast Tips: Publishing to NPM | YouTube](https://www.youtube.com/watch?v=eh89VE3Mk5g)
+  * [mattpocock/pkg-demo | GitHub](https://github.com/mattpocock/pkg-demo)
 </details>
 <hr>
 
