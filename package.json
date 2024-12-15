@@ -12,8 +12,8 @@
   "bugs": {
     "url": "https://github.com/rdarida/texturepacker-cli/issues"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": {
     "texturepacker-cli": "./dist/cli.js",
     "texture": "./dist/cli.js"
@@ -27,7 +27,7 @@
     "pretest": "rimraf coverage",
     "test": "jest",
     "prebuild": "rimraf dist",
-    "build": "tsup src/index.ts src/cli.ts --format cjs --dts --minify",
+    "build": "tsup ./src/index.ts ./src/cli.ts --format cjs --dts --minify",
     "prepublishOnly": "npm run build",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin HEAD"
