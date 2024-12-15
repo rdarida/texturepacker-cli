@@ -4,7 +4,7 @@
   "description": "NodeJS command line interface for TexturePacker.",
   "license": "MIT",
   "author": "Róbert Darida",
-  "homepage": "https://github.com/rdarida/texturepacker-cli#readme",
+  "homepage": "https://rdarida.github.io/texturepacker-cli/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rdarida/texturepacker-cli.git"
