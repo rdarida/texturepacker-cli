@@ -1,5 +1,6 @@
 /**
  * Pack
+ *
  * @returns pack
  */
 export function pack(): string {

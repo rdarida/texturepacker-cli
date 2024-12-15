@@ -1,6 +1,10 @@
 <h1 align="center">texturepacker-cli</h1>
 <p align="center">NodeJS command line interface for TexturePacker.</p>
 <p align="center">
+  <a href="https://rdarida.github.io/texturepacker-cli/" target="_blank">
+    <img src="https://img.shields.io/badge/website-blue?style=flat" />
+  </a>
+
   <a href="https://github.com/rdarida/texturepacker-cli" target="_blank">
     <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" />
   </a>
