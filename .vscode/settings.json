@@ -21,6 +21,6 @@
     "LICENSE": true,
     "package-lock.json": true,
     "sonar-project.properties": true,
-    "typedoc.json": false
+    "typedoc.json": true
   }
 }
