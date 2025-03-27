@@ -23,6 +23,9 @@
 # texturepacker-cli
 NodeJS command line interface for TexturePacker
 
+## Installation
+TBD
+
 <hr>
 
 <details>
@@ -30,6 +33,7 @@ NodeJS command line interface for TexturePacker
     <strong>Resources</strong>
   </summary>
 
+- [Documentation](https://rdarida.github.io/texturepacker-cli/)
 - **TexturePacker**
   * [Running TexturePacker from Commandline](https://www.codeandweb.com/texturepacker/documentation/commandline)
   * [Texture Settings](https://www.codeandweb.com/texturepacker/documentation/texture-settings)
