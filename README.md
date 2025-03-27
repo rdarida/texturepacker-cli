@@ -1,4 +1,4 @@
-<img src="https://repository-images.githubusercontent.com/902586561/7490468a-ab83-402a-bd75-8c79c0168a83">
+<img src="https://repository-images.githubusercontent.com/902586561/7490468a-ab83-402a-bd75-8c79c0168a83" alt="Cover" />
 <p align="center">
   <a href="https://npmjs.com/package/texturepacker-cli/" target="_blank">
     <img src="https://img.shields.io/npm/v/texturepacker-cli.svg" />
@@ -9,14 +9,14 @@
   </a>
 
   <a href="https://github.com/rdarida/texturepacker-cli/actions/workflows/publish.yml" target="_blank" alt="GitHub Actions">
-    <img src="https://github.com/rdarida/texturepacker-cli/actions/workflows/publish.yml/badge.svg" alt="Publish">
+    <img src="https://github.com/rdarida/texturepacker-cli/actions/workflows/publish.yml/badge.svg" alt="Publish" />
   </a>
 
   <a href="https://sonarcloud.io/dashboard?id=rdarida_texturepacker-cli" target="_blank" alt="SonarCloud">
-    <img src="https://sonarcloud.io/api/project_badges/measure?project=rdarida_texturepacker-cli&metric=coverage" alt="coverage">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=rdarida_texturepacker-cli&metric=coverage" alt="coverage" />
   </a>
 
-  <img src="https://img.shields.io/librariesio/release/npm/texturepacker-cli">
+  <img src="https://img.shields.io/librariesio/release/npm/texturepacker-cli" alt="Dependencies" />
 </p>
 <hr>
 
