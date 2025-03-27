@@ -9,8 +9,8 @@
     <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" />
   </a>
 
-  <a href="https://github.com/rdarida/texturepacker-cli/actions/workflows/release.yml" target="_blank" alt="GitHub Actions">
-    <img src="https://github.com/rdarida/texturepacker-cli/actions/workflows/release.yml/badge.svg" alt="Release">
+  <a href="https://github.com/rdarida/texturepacker-cli/actions/workflows/publish.yml" target="_blank" alt="GitHub Actions">
+    <img src="https://github.com/rdarida/texturepacker-cli/actions/workflows/publish.yml/badge.svg" alt="Publish">
   </a>
 
   <a href="https://sonarcloud.io/dashboard?id=rdarida_texturepacker-cli" target="_blank" alt="SonarCloud">
