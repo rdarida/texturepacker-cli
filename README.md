@@ -1,6 +1,9 @@
-<h1 align="center">texturepacker-cli</h1>
-<p align="center">NodeJS command line interface for TexturePacker.</p>
+<img src="https://repository-images.githubusercontent.com/902586561/f78534a8-9102-4c43-9c0b-b5c08876d6c1">
 <p align="center">
+  <a href="https://npmjs.com/package/texturepacker-cli/" target="_blank">
+    <img src="https://img.shields.io/npm/v/texturepacker-cli.svg" />
+  </a>
+
   <a href="https://rdarida.github.io/texturepacker-cli/" target="_blank">
     <img src="https://img.shields.io/badge/website-blue?style=flat" />
   </a>
@@ -19,6 +22,11 @@
 
   <img src="https://img.shields.io/librariesio/release/npm/texturepacker-cli">
 </p>
+<hr>
+
+# texturepacker-cli
+NodeJS command line interface for TexturePacker
+
 <hr>
 
 <details>
