@@ -1,4 +1,4 @@
-<img src="https://repository-images.githubusercontent.com/902586561/f78534a8-9102-4c43-9c0b-b5c08876d6c1">
+<img src="https://repository-images.githubusercontent.com/902586561/7490468a-ab83-402a-bd75-8c79c0168a83">
 <p align="center">
   <a href="https://npmjs.com/package/texturepacker-cli/" target="_blank">
     <img src="https://img.shields.io/npm/v/texturepacker-cli.svg" />
@@ -21,7 +21,7 @@
 <hr>
 
 # texturepacker-cli
-NodeJS command line interface for TexturePacker
+NodeJS command-line interface for TexturePacker
 
 ## Installation
 TBD
@@ -37,10 +37,6 @@ TBD
 - **TexturePacker**
   * [Running TexturePacker from Commandline](https://www.codeandweb.com/texturepacker/documentation/commandline)
   * [Texture Settings](https://www.codeandweb.com/texturepacker/documentation/texture-settings)
-
-- **Etc**
-  * [Blazing Fast Tips: Publishing to NPM | YouTube](https://www.youtube.com/watch?v=eh89VE3Mk5g)
-  * [mattpocock/pkg-demo | GitHub](https://github.com/mattpocock/pkg-demo)
 </details>
 <hr>
 
