@@ -4,10 +4,6 @@
     <img src="https://img.shields.io/npm/v/texturepacker-cli.svg" />
   </a>
 
-  <a href="https://rdarida.github.io/texturepacker-cli/" target="_blank">
-    <img src="https://img.shields.io/badge/website-blue?style=flat" />
-  </a>
-
   <a href="https://github.com/rdarida/texturepacker-cli" target="_blank">
     <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" />
   </a>
