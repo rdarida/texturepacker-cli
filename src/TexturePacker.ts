@@ -1,5 +1,6 @@
-import { AlphaHandling, Format, TexturePackerOptions } from './types';
 import { DEFAULT_OPTIONS } from './constants';
+import { TexturePackerOptions } from './types';
+import { AlphaHandlingType, FormatType } from './helpers';
 
 export class TexturePacker {
   private _options: TexturePackerOptions;
@@ -19,7 +20,7 @@ export class TexturePacker {
     return this;
   }
 
-  public setFormat(format: Format): TexturePacker {
+  public setFormat(format: FormatType): TexturePacker {
     this._options.format = format;
     return this;
   }
@@ -34,7 +35,7 @@ export class TexturePacker {
     return this;
   }
 
-  public setAlphaHandling(alphaHandling: AlphaHandling): TexturePacker {
+  public setAlphaHandling(alphaHandling: AlphaHandlingType): TexturePacker {
     this._options.alphaHandling = alphaHandling;
     return this;
   }

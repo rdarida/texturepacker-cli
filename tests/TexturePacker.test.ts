@@ -1,4 +1,4 @@
-import { AlphaHandling } from '../src/types';
+import { AlphaHandling, Format } from '../src/enums';
 import { TexturePacker } from '../src/TexturePacker';
 
 const EXPECTED = [
@@ -15,6 +15,7 @@ const EXPECTED = [
 describe('Test TexturePacker class', () => {
   it('', () => {
     const actual = new TexturePacker({
+      format: 'json',
       data: '<data>',
       trimMargin: 0,
       alphaHandling: AlphaHandling.ReduceBorderArtifacts,
@@ -28,9 +29,10 @@ describe('Test TexturePacker class', () => {
   it('', () => {
     const actual = new TexturePacker()
       .setFileList(['img 1.png', 'img 2.png'])
+      .setFormat(Format.JSONHash)
       .setData('<data>')
       .setTrimMargin(0)
-      .setAlphaHandling(AlphaHandling.ReduceBorderArtifacts)
+      .setAlphaHandling('ReduceBorderArtifacts')
       .trimSpriteNames()
       .disableRotation();
 
