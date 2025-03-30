@@ -1,17 +1,21 @@
-export type TexturePackerOptions = {
-  /**
-   * Selects the packing algorithm.
-   */
-  algorithm: 'Polygon' | 'MaxRects' | 'Grid' | 'Basic';
+export enum AlphaHandling {
+  ClearTransparentPixels = 'ClearTransparentPixels',
+  KeepTransparentPixels = 'KeepTransparentPixels',
+  PremultiplyAlpha = 'PremultiplyAlpha',
+  ReduceBorderArtifacts = 'ReduceBorderArtifacts'
+}
 
+export enum Format {
+  JSONHash = 'json',
+  PixiJS = 'pixijs4',
+  Spine = 'spine'
+}
+
+export type TexturePackerOptions = {
   /**
    * Defines how color values of transparent pixels are processed.
    */
-  alphaHandling:
-    | 'KeepTransparentPixels'
-    | 'ClearTransparentPixels'
-    | 'ReduceBorderArtifacts'
-    | 'PremultiplyAlpha';
+  alphaHandling: AlphaHandling;
 
   /**
    * Sets the output filename for the Data file. This file contains metadata
@@ -28,57 +32,7 @@ export type TexturePackerOptions = {
    * Sets the data format or framework for a new project. This choice enables
    * additional feature. It determines how sprite metadata is saved.
    */
-  format: 'json' | 'pixijs4' | 'phaser';
-
-  /**
-   * Sets the maximum height for the texture. The default value is 2048.
-   */
-  maxHeight: number;
-
-  /**
-   * Sets the heuristics used to place sprites in the texture.
-   */
-  maxrectsHeuristics:
-    | 'Best'
-    | 'ShortSideFit'
-    | 'LongSideFit'
-    | 'AreaFit'
-    | 'BottomLeft'
-    | 'ContactPoint';
-
-  /**
-   * Sets the maximum width for the texture. The default value is 2048.
-   */
-  maxWidth: number;
-
-  /**
-   * Controls the time TexturePacker spends finding the minimum texture size.
-   */
-  packMode: 'Fast' | 'Good' | 'Best';
-
-  /**
-   * Sets the basic scale factor for the sprites. Default is 1 to keep the
-   * original sprite sizes.
-   */
-  scale: number;
-
-  /**
-   * Selects the algorithm used for scaling the sprites.
-   */
-  scaleMode:
-    | 'Smooth'
-    | 'Fast'
-    | 'Scale2x'
-    | 'Scale3x'
-    | 'Scale4x'
-    | 'Eagle'
-    | 'Hq2x';
-
-  /**
-   * Removes transparent pixels from sprite borders for tighter packing and
-   * faster rendering.
-   */
-  trimMode: 'Trim' | 'CropKeepPos' | 'Crop' | 'Polygon';
+  format: Format;
 
   /**
    * Transparent margin which is left over after trimming.
