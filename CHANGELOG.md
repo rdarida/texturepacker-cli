@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/rdarida/texturepacker-cli/compare/v0.0.16...v0.0.17) (2025-03-30)
+
+
+### Features
+
+* create TexturePackerOption type ([177b51d](https://github.com/rdarida/texturepacker-cli/commit/177b51dde05233e8968e1dd66c54eb206897acc7))
+* implement TexturePacker class ([ffa2a67](https://github.com/rdarida/texturepacker-cli/commit/ffa2a679e80ab347b45fea52f9f9123e47a50c5e))
+
 ### [0.0.16](https://github.com/rdarida/texturepacker-cli/compare/v0.0.15...v0.0.16) (2025-03-27)
 
 ### [0.0.15](https://github.com/rdarida/texturepacker-cli/compare/v0.0.14...v0.0.15) (2025-03-27)
