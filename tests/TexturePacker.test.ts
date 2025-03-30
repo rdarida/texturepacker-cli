@@ -5,7 +5,7 @@ const EXPECTED = [
   'TexturePacker',
   '"img 1.png" "img 2.png"',
   '--format json',
-  '--data <data>',
+  '--data "<data>"',
   '--trim-margin 0',
   '--alpha-handling ReduceBorderArtifacts',
   '--trim-sprite-names',
