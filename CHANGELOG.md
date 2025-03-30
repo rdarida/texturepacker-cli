@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/rdarida/texturepacker-cli/compare/v0.0.19...v0.0.20) (2025-03-30)
+
+
+### Features
+
+* add XML format ([dab9c24](https://github.com/rdarida/texturepacker-cli/commit/dab9c241466ddc803a5d70a0a5c0c907dc8c6e03))
+
 ### [0.0.19](https://github.com/rdarida/texturepacker-cli/compare/v0.0.18...v0.0.19) (2025-03-30)
 
 
