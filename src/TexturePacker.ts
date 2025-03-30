@@ -3,12 +3,20 @@ import { DEFAULT_OPTIONS } from './constants';
 
 export class TexturePacker {
   private _options: TexturePackerOptions;
+  private _fileList: string[];
 
   constructor(options?: Partial<TexturePackerOptions>) {
     this._options = {
       ...DEFAULT_OPTIONS,
       ...options
     };
+
+    this._fileList = [];
+  }
+
+  public setFileList(filePaths: string[]): TexturePacker {
+    this._fileList = filePaths.map(path => `"${path}"`);
+    return this;
   }
 
   public setFormat(format: Format): TexturePacker {
@@ -53,6 +61,7 @@ export class TexturePacker {
 
     return [
       'TexturePacker',
+      this._fileList.join(' '),
       `--format ${format}`,
       `--data ${data}`,
       `--trim-margin ${trimMargin}`,
