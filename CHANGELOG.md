@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.21](https://github.com/rdarida/texturepacker-cli/compare/v0.0.20...v0.0.21) (2025-03-30)
+
+
+### Features
+
+* add cocos2d to Format enum ([110a18c](https://github.com/rdarida/texturepacker-cli/commit/110a18c7a1274450f1529fa70cedf5f392c059a4))
+
 ### [0.0.20](https://github.com/rdarida/texturepacker-cli/compare/v0.0.19...v0.0.20) (2025-03-30)
 
 

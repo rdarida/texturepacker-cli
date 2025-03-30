@@ -6,6 +6,7 @@ export enum AlphaHandling {
 }
 
 export enum Format {
+  Cocos2D = 'cocos2d',
   JSONHash = 'json',
   PixiJS = 'pixijs4',
   Spine = 'spine',
