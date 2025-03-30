@@ -1,21 +1,10 @@
-export enum AlphaHandling {
-  ClearTransparentPixels = 'ClearTransparentPixels',
-  KeepTransparentPixels = 'KeepTransparentPixels',
-  PremultiplyAlpha = 'PremultiplyAlpha',
-  ReduceBorderArtifacts = 'ReduceBorderArtifacts'
-}
-
-export enum Format {
-  JSONHash = 'json',
-  PixiJS = 'pixijs4',
-  Spine = 'spine'
-}
+import { AlphaHandlingType, FormatType } from './helpers';
 
 export type TexturePackerOptions = {
   /**
    * Defines how color values of transparent pixels are processed.
    */
-  alphaHandling: AlphaHandling;
+  alphaHandling: AlphaHandlingType;
 
   /**
    * Sets the output filename for the Data file. This file contains metadata
@@ -32,7 +21,7 @@ export type TexturePackerOptions = {
    * Sets the data format or framework for a new project. This choice enables
    * additional feature. It determines how sprite metadata is saved.
    */
-  format: Format;
+  format: FormatType;
 
   /**
    * Transparent margin which is left over after trimming.

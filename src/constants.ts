@@ -1,7 +1,8 @@
-import { AlphaHandling, Format, TexturePackerOptions } from './types';
+import { AlphaHandling, Format } from './enums';
+import { TexturePackerOptions } from './types';
 
 export const DEFAULT_OPTIONS: TexturePackerOptions = {
-  format: Format.JSONHash,
+  format: Format.XML,
   data: '',
   trimMargin: 1,
   alphaHandling: AlphaHandling.ClearTransparentPixels,
