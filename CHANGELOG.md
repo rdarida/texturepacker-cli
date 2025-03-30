@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/rdarida/texturepacker-cli/compare/v0.0.17...v0.0.18) (2025-03-30)
+
+
+### Features
+
+* create pack.ts and unpack.ts files ([ec796e4](https://github.com/rdarida/texturepacker-cli/commit/ec796e4ef620e98d5d20877b9374ad8f8c67e13b))
+* implement setFileList method for TexturePacker class ([a80cab9](https://github.com/rdarida/texturepacker-cli/commit/a80cab98eea15617d4c1a8b8c6d3cd1fc4112d13))
+
 ### [0.0.17](https://github.com/rdarida/texturepacker-cli/compare/v0.0.16...v0.0.17) (2025-03-30)
 
 
