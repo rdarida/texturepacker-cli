@@ -14,8 +14,8 @@ export class TexturePacker {
     this._fileList = [];
   }
 
-  public setFileList(filePaths: string[]): TexturePacker {
-    this._fileList = filePaths.map(path => `"${path}"`);
+  public setFileList(fileList: string[]): TexturePacker {
+    this._fileList = fileList;
     return this;
   }
 
@@ -61,9 +61,9 @@ export class TexturePacker {
 
     return [
       'TexturePacker',
-      this._fileList.join(' '),
+      this._fileList.map(file => `"${file}"`).join(' '),
       `--format ${format}`,
-      `--data ${data}`,
+      `--data "${data}"`,
       `--trim-margin ${trimMargin}`,
       `--alpha-handling ${alphaHandling}`,
       trimSpriteNames ? '--trim-sprite-names' : '',
