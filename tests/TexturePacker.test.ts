@@ -1,5 +1,16 @@
-import { AlphaHandling, Format } from '../src/types';
+import { AlphaHandling } from '../src/types';
 import { TexturePacker } from '../src/TexturePacker';
+
+const EXPECTED = [
+  'TexturePacker',
+  '"img 1.png" "img 2.png"',
+  '--format json',
+  '--data <data>',
+  '--trim-margin 0',
+  '--alpha-handling ReduceBorderArtifacts',
+  '--trim-sprite-names',
+  '--disable-rotation'
+].join(' ');
 
 describe('Test TexturePacker class', () => {
   it('', () => {
@@ -9,39 +20,20 @@ describe('Test TexturePacker class', () => {
       alphaHandling: AlphaHandling.ReduceBorderArtifacts,
       trimSpriteNames: true,
       disableRotation: true
-    }).toString();
+    }).setFileList(['img 1.png', 'img 2.png']);
 
-    const expected = [
-      'TexturePacker',
-      '--format json',
-      '--data <data>',
-      '--trim-margin 0',
-      '--alpha-handling ReduceBorderArtifacts',
-      '--trim-sprite-names',
-      '--disable-rotation'
-    ].join(' ');
-
-    expect(actual.toString()).toBe(expected);
+    expect(actual.toString()).toBe(EXPECTED);
   });
 
   it('', () => {
     const actual = new TexturePacker()
+      .setFileList(['img 1.png', 'img 2.png'])
       .setData('<data>')
       .setTrimMargin(0)
       .setAlphaHandling(AlphaHandling.ReduceBorderArtifacts)
       .trimSpriteNames()
       .disableRotation();
 
-    const expected = [
-      'TexturePacker',
-      '--format json',
-      '--data <data>',
-      '--trim-margin 0',
-      '--alpha-handling ReduceBorderArtifacts',
-      '--trim-sprite-names',
-      '--disable-rotation'
-    ].join(' ');
-
-    expect(actual.toString()).toBe(expected);
+    expect(actual.toString()).toBe(EXPECTED);
   });
 });
