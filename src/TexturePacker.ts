@@ -23,7 +23,7 @@ export class TexturePacker {
     return [
       fileList.map(file => `"${file}"`).join(' '),
       `--format ${format}`,
-      `--data ${this.data}`,
+      `--data "${this.data}"`,
       `--trim-margin ${trimMargin}`,
       `--alpha-handling ${alphaHandling}`,
       trimSpriteNames ? '--trim-sprite-names' : '',
@@ -32,7 +32,7 @@ export class TexturePacker {
   }
 
   public get data(): string {
-    return `"${this._options.data}"`;
+    return this._options.data;
   }
 
   constructor(options?: Partial<TexturePackerOptions>) {

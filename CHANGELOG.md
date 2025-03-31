@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.24](https://github.com/rdarida/texturepacker-cli/compare/v0.0.23...v0.0.24) (2025-03-31)
+
+### [0.0.23](https://github.com/rdarida/texturepacker-cli/compare/v0.0.22...v0.0.23) (2025-03-31)
+
+
+### Bug Fixes
+
+* fix data string quoting ([6923c59](https://github.com/rdarida/texturepacker-cli/commit/6923c59ac7a13e899aaa4ee64dc96428f1e03ae0))
+
 ### [0.0.22](https://github.com/rdarida/texturepacker-cli/compare/v0.0.21...v0.0.22) (2025-03-31)
 
 ### [0.0.21](https://github.com/rdarida/texturepacker-cli/compare/v0.0.20...v0.0.21) (2025-03-30)
