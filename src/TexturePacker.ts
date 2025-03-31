@@ -3,20 +3,47 @@ import { TexturePackerOptions } from './types';
 import { AlphaHandlingType, FormatType } from './helpers';
 
 export class TexturePacker {
+  private static readonly Command = 'TexturePacker';
   private _options: TexturePackerOptions;
-  private _fileList: string[];
+
+  public get command(): string {
+    return TexturePacker.Command;
+  }
+
+  public get args(): string[] {
+    const {
+      fileList,
+      format,
+      trimMargin,
+      alphaHandling,
+      trimSpriteNames,
+      disableRotation
+    } = this._options;
+
+    return [
+      fileList.map(file => `"${file}"`).join(' '),
+      `--format ${format}`,
+      `--data ${this.data}`,
+      `--trim-margin ${trimMargin}`,
+      `--alpha-handling ${alphaHandling}`,
+      trimSpriteNames ? '--trim-sprite-names' : '',
+      disableRotation ? '--disable-rotation' : ''
+    ];
+  }
+
+  public get data(): string {
+    return `"${this._options.data}"`;
+  }
 
   constructor(options?: Partial<TexturePackerOptions>) {
     this._options = {
       ...DEFAULT_OPTIONS,
       ...options
     };
-
-    this._fileList = [];
   }
 
   public setFileList(fileList: string[]): TexturePacker {
-    this._fileList = fileList;
+    this._options.fileList = fileList;
     return this;
   }
 
@@ -51,26 +78,6 @@ export class TexturePacker {
   }
 
   public toString(): string {
-    const {
-      format,
-      data,
-      trimMargin,
-      alphaHandling,
-      trimSpriteNames,
-      disableRotation
-    } = this._options;
-
-    return [
-      'TexturePacker',
-      this._fileList.map(file => `"${file}"`).join(' '),
-      `--format ${format}`,
-      `--data "${data}"`,
-      `--trim-margin ${trimMargin}`,
-      `--alpha-handling ${alphaHandling}`,
-      trimSpriteNames ? '--trim-sprite-names' : '',
-      disableRotation ? '--disable-rotation' : ''
-    ]
-      .join(' ')
-      .trim();
+    return [this.command, ...this.args].join(' ').trim();
   }
 }

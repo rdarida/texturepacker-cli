@@ -7,9 +7,7 @@ const EXPECTED = [
   '--format json',
   '--data "<data>"',
   '--trim-margin 0',
-  '--alpha-handling ReduceBorderArtifacts',
-  '--trim-sprite-names',
-  '--disable-rotation'
+  '--alpha-handling ReduceBorderArtifacts'
 ].join(' ');
 
 describe('Test TexturePacker class', () => {
@@ -19,11 +17,11 @@ describe('Test TexturePacker class', () => {
       data: '<data>',
       trimMargin: 0,
       alphaHandling: AlphaHandling.ReduceBorderArtifacts,
-      trimSpriteNames: true,
-      disableRotation: true
     }).setFileList(['img 1.png', 'img 2.png']);
 
     expect(actual.toString()).toBe(EXPECTED);
+    expect(actual.command).toBe('TexturePacker');
+    expect(actual.data).toBe('"<data>"');
   });
 
   it('', () => {
@@ -36,6 +34,10 @@ describe('Test TexturePacker class', () => {
       .trimSpriteNames()
       .disableRotation();
 
-    expect(actual.toString()).toBe(EXPECTED);
+    const expected = EXPECTED + ' --trim-sprite-names --disable-rotation';
+
+    expect(actual.toString()).toBe(expected);
+    expect(actual.command).toBe('TexturePacker');
+    expect(actual.data).toBe('"<data>"');
   });
 });

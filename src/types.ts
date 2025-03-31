@@ -18,6 +18,11 @@ export type TexturePackerOptions = {
   disableRotation: boolean;
 
   /**
+   *
+   */
+  fileList: string[];
+
+  /**
    * Sets the data format or framework for a new project. This choice enables
    * additional feature. It determines how sprite metadata is saved.
    */
