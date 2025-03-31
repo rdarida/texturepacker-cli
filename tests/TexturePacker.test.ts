@@ -16,12 +16,12 @@ describe('Test TexturePacker class', () => {
       format: 'json',
       data: '<data>',
       trimMargin: 0,
-      alphaHandling: AlphaHandling.ReduceBorderArtifacts,
+      alphaHandling: AlphaHandling.ReduceBorderArtifacts
     }).setFileList(['img 1.png', 'img 2.png']);
 
     expect(actual.toString()).toBe(EXPECTED);
     expect(actual.command).toBe('TexturePacker');
-    expect(actual.data).toBe('"<data>"');
+    expect(actual.data).toBe('<data>');
   });
 
   it('', () => {
@@ -38,6 +38,6 @@ describe('Test TexturePacker class', () => {
 
     expect(actual.toString()).toBe(expected);
     expect(actual.command).toBe('TexturePacker');
-    expect(actual.data).toBe('"<data>"');
+    expect(actual.data).toBe('<data>');
   });
 });
