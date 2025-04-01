@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.25](https://github.com/rdarida/texturepacker-cli/compare/v0.0.24...v0.0.25) (2025-04-01)
+
+
+### Features
+
+* implement run and runSync methods in TexturePacker class ([4f5fcc2](https://github.com/rdarida/texturepacker-cli/commit/4f5fcc26db2f92ea335a92ad19be4f53e4cb1e3a))
+
 ### [0.0.24](https://github.com/rdarida/texturepacker-cli/compare/v0.0.23...v0.0.24) (2025-03-31)
 
 ### [0.0.23](https://github.com/rdarida/texturepacker-cli/compare/v0.0.22...v0.0.23) (2025-03-31)

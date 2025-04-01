@@ -3,12 +3,17 @@ import { TexturePacker } from '../src/TexturePacker';
 
 const EXPECTED = [
   'TexturePacker',
-  '"img 1.png" "img 2.png"',
-  '--format json',
-  '--data "<data>"',
-  '--trim-margin 0',
-  '--alpha-handling ReduceBorderArtifacts'
-].join(' ');
+  'img 1.png',
+  'img 2.png',
+  '--format',
+  'json',
+  '--data',
+  '<data>',
+  '--trim-margin',
+  '0',
+  '--alpha-handling',
+  'ReduceBorderArtifacts'
+].map(v => `"${v}"`).join(' ');
 
 describe('Test TexturePacker class', () => {
   it('', () => {
@@ -34,7 +39,7 @@ describe('Test TexturePacker class', () => {
       .trimSpriteNames()
       .disableRotation();
 
-    const expected = EXPECTED + ' --trim-sprite-names --disable-rotation';
+    const expected = EXPECTED + ' "--trim-sprite-names" "--disable-rotation"';
 
     expect(actual.toString()).toBe(expected);
     expect(actual.command).toBe('TexturePacker');

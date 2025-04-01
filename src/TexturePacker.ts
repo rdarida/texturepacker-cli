@@ -1,6 +1,7 @@
 import { DEFAULT_OPTIONS } from './constants';
 import { TexturePackerOptions } from './types';
 import { AlphaHandlingType, FormatType } from './helpers';
+import { execute, executeSync } from './utils';
 
 export class TexturePacker {
   private static readonly Command = 'TexturePacker';
@@ -14,6 +15,7 @@ export class TexturePacker {
     const {
       fileList,
       format,
+      data,
       trimMargin,
       alphaHandling,
       trimSpriteNames,
@@ -21,14 +23,18 @@ export class TexturePacker {
     } = this._options;
 
     return [
-      fileList.map(file => `"${file}"`).join(' '),
-      `--format ${format}`,
-      `--data "${this.data}"`,
-      `--trim-margin ${trimMargin}`,
-      `--alpha-handling ${alphaHandling}`,
+      ...fileList,
+      '--format',
+      format,
+      '--data',
+      data,
+      '--trim-margin',
+      trimMargin.toString(),
+      '--alpha-handling',
+      alphaHandling,
       trimSpriteNames ? '--trim-sprite-names' : '',
       disableRotation ? '--disable-rotation' : ''
-    ];
+    ].filter(v => !!v);
   }
 
   public get data(): string {
@@ -78,6 +84,16 @@ export class TexturePacker {
   }
 
   public toString(): string {
-    return [this.command, ...this.args].join(' ').trim();
+    return [this.command, ...this.args].map(v => `"${v}"`).join(' ');
+  }
+
+  public async run(): Promise<void> {
+    const { command, args } = this;
+    return execute(command, args);
+  }
+
+  public runSync(): void {
+    const { command, args } = this;
+    executeSync(command, args);
   }
 }
