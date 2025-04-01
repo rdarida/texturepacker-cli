@@ -1,0 +1,168 @@
+{"frames": {
+
+"cards/card_0":
+{
+	"frame": {"x":1,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_1":
+{
+	"frame": {"x":1,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_2":
+{
+	"frame": {"x":521,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_3":
+{
+	"frame": {"x":651,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_4":
+{
+	"frame": {"x":651,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_5":
+{
+	"frame": {"x":781,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_6":
+{
+	"frame": {"x":781,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_7":
+{
+	"frame": {"x":911,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_8":
+{
+	"frame": {"x":911,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_9":
+{
+	"frame": {"x":1041,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_10":
+{
+	"frame": {"x":131,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_11":
+{
+	"frame": {"x":131,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_12":
+{
+	"frame": {"x":261,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_13":
+{
+	"frame": {"x":261,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_14":
+{
+	"frame": {"x":391,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_15":
+{
+	"frame": {"x":391,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"cards/card_16":
+{
+	"frame": {"x":521,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"slot_0":
+{
+	"frame": {"x":1041,"y":187,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+},
+"slot_1":
+{
+	"frame": {"x":1171,"y":1,"w":128,"h":184},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":128,"h":184},
+	"sourceSize": {"w":128,"h":184}
+}},
+"animations": {
+	"cards/card": ["cards/card_0","cards/card_1","cards/card_2","cards/card_3","cards/card_4","cards/card_5","cards/card_6","cards/card_7","cards/card_8","cards/card_9","cards/card_10","cards/card_11","cards/card_12","cards/card_13","cards/card_14","cards/card_15","cards/card_16"],
+	"slot": ["slot_0","slot_1"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas.png",
+	"format": "RGBA8888",
+	"size": {"w":1300,"h":372},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3fb0127b0bcbad6933f039936a13b56e:bf891d9c3cb1aee8a5559087073ed1a6:cbce6b53f0f49e0bf15173c25c41f876$"
+}
+}
