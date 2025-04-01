@@ -13,7 +13,9 @@ const EXPECTED = [
   '0',
   '--alpha-handling',
   'ReduceBorderArtifacts'
-].map(v => `"${v}"`).join(' ');
+]
+  .map(v => `"${v}"`)
+  .join(' ');
 
 describe('Test TexturePacker class', () => {
   it('', () => {
@@ -26,7 +28,6 @@ describe('Test TexturePacker class', () => {
 
     expect(actual.toString()).toBe(EXPECTED);
     expect(actual.command).toBe('TexturePacker');
-    expect(actual.data).toBe('<data>');
   });
 
   it('', () => {
@@ -43,6 +44,16 @@ describe('Test TexturePacker class', () => {
 
     expect(actual.toString()).toBe(expected);
     expect(actual.command).toBe('TexturePacker');
-    expect(actual.data).toBe('<data>');
+  });
+
+  it('throws an error if TexturePacker executable is not found', async () => {
+    const tp = new TexturePacker();
+    const mockCommandName = 'NonExistentTexturePacker';
+    const expectedErrorMsg = `not found: ${mockCommandName}`;
+
+    jest.spyOn(tp, 'command', 'get').mockReturnValue(mockCommandName);
+
+    expect(() => tp.runSync()).toThrow(expectedErrorMsg);
+    await expect(tp.run()).rejects.toThrow(expectedErrorMsg);
   });
 });

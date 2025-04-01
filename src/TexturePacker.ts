@@ -1,7 +1,19 @@
-import { DEFAULT_OPTIONS } from './constants';
+import which from 'which';
+
 import { TexturePackerOptions } from './types';
+import { AlphaHandling, Format } from './enums';
 import { AlphaHandlingType, FormatType } from './helpers';
 import { execute, executeSync } from './utils';
+
+const DEFAULT_OPTIONS: TexturePackerOptions = {
+  fileList: [],
+  format: Format.Cocos2D,
+  data: '',
+  trimMargin: 1,
+  alphaHandling: AlphaHandling.ClearTransparentPixels,
+  trimSpriteNames: false,
+  disableRotation: false
+};
 
 export class TexturePacker {
   private static readonly Command = 'TexturePacker';
@@ -35,10 +47,6 @@ export class TexturePacker {
       trimSpriteNames ? '--trim-sprite-names' : '',
       disableRotation ? '--disable-rotation' : ''
     ].filter(v => !!v);
-  }
-
-  public get data(): string {
-    return this._options.data;
   }
 
   constructor(options?: Partial<TexturePackerOptions>) {
@@ -88,12 +96,11 @@ export class TexturePacker {
   }
 
   public async run(): Promise<void> {
-    const { command, args } = this;
-    return execute(command, args);
+    return which(this.command).then(() => execute(this.command, this.args));
   }
 
   public runSync(): void {
-    const { command, args } = this;
-    executeSync(command, args);
+    which.sync(this.command);
+    executeSync(this.command, this.args);
   }
 }
