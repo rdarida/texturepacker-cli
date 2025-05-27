@@ -39,7 +39,7 @@
     "docs": "typedoc"
   },
   "dependencies": {
-    "yargs": "^17.7.2"
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
