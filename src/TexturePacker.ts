@@ -5,7 +5,7 @@ import { execute, executeSync } from './utils';
 
 export class TexturePacker {
   private static readonly Command = 'TexturePacker';
-  private _options: TexturePackerOptions;
+  private readonly _options: TexturePackerOptions;
 
   public get command(): string {
     return TexturePacker.Command;
@@ -48,37 +48,37 @@ export class TexturePacker {
     };
   }
 
-  public setFileList(fileList: string[]): TexturePacker {
+  public setFileList(fileList: string[]): this {
     this._options.fileList = fileList;
     return this;
   }
 
-  public setFormat(format: FormatType): TexturePacker {
+  public setFormat(format: FormatType): this {
     this._options.format = format;
     return this;
   }
 
-  public setData(data: string): TexturePacker {
+  public setData(data: string): this {
     this._options.data = data;
     return this;
   }
 
-  public setTrimMargin(trimMargin: number): TexturePacker {
+  public setTrimMargin(trimMargin: number): this {
     this._options.trimMargin = trimMargin;
     return this;
   }
 
-  public setAlphaHandling(alphaHandling: AlphaHandlingType): TexturePacker {
+  public setAlphaHandling(alphaHandling: AlphaHandlingType): this {
     this._options.alphaHandling = alphaHandling;
     return this;
   }
 
-  public trimSpriteNames(): TexturePacker {
+  public trimSpriteNames(): this {
     this._options.trimSpriteNames = true;
     return this;
   }
 
-  public disableRotation(): TexturePacker {
+  public disableRotation(): this {
     this._options.disableRotation = true;
     return this;
   }
