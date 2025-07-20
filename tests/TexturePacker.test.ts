@@ -13,7 +13,9 @@ const EXPECTED = [
   '0',
   '--alpha-handling',
   'ReduceBorderArtifacts'
-].map(v => `"${v}"`).join(' ');
+]
+  .map(v => `"${v}"`)
+  .join(' ');
 
 describe('Test TexturePacker class', () => {
   it('', () => {
