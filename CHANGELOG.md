@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.26](https://github.com/rdarida/texturepacker-cli/compare/v0.0.25...v0.0.26) (2025-07-20)
+
+
+### Bug Fixes
+
+* use sonarqube-scan-action@v5 ([75fb547](https://github.com/rdarida/texturepacker-cli/commit/75fb5473951f0accdab5995745259e20af79db8c))
+
 ### [0.0.25](https://github.com/rdarida/texturepacker-cli/compare/v0.0.24...v0.0.25) (2025-04-01)
 
 
