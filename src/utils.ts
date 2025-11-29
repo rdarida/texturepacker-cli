@@ -1,4 +1,4 @@
-import { ExecFileOptions, execFile, execFileSync } from 'child_process';
+import { ExecFileOptions, execFile, execFileSync } from 'node:child_process';
 
 const OPTIONS: ExecFileOptions = {
   maxBuffer: Infinity,
