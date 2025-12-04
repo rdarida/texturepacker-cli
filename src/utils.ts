@@ -1,4 +1,9 @@
-import { ExecFileOptions, execFile, execFileSync } from 'node:child_process';
+import {
+  ExecFileOptions,
+  ExecFileSyncOptions,
+  execFile,
+  execFileSync
+} from 'node:child_process';
 
 const OPTIONS: ExecFileOptions = {
   maxBuffer: Infinity,
@@ -18,5 +23,5 @@ export async function execute(command: string, args: string[]): Promise<void> {
 }
 
 export function executeSync(command: string, args: string[]): void {
-  execFileSync(command, args, OPTIONS);
+  execFileSync(command, args, OPTIONS as ExecFileSyncOptions);
 }
