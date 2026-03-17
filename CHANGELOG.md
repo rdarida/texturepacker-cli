@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.35](https://github.com/rdarida/texturepacker-cli/compare/v0.0.34...v0.0.35) (2026-03-17)
+
+### Bug Fixes
+
+* upgrade undici package ([aa8bfdf](https://github.com/rdarida/texturepacker-cli/commit/aa8bfdf76a6835597c99b3bc67576bd7368ace70))
+
 ## [0.0.34](https://github.com/rdarida/texturepacker-cli/compare/v0.0.32...v0.0.34) (2026-03-03)
 
 ### Bug Fixes
