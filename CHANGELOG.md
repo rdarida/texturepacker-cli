@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.37](https://github.com/rdarida/texturepacker-cli/compare/v0.0.36...v0.0.37) (2026-04-22)
+
+### Bug Fixes
+
+* upgrade packages ([307555f](https://github.com/rdarida/texturepacker-cli/commit/307555ff10b762e432706afb622c1bf312e615d0))
+
 ## [0.0.36](https://github.com/rdarida/texturepacker-cli/compare/v0.0.35...v0.0.36) (2026-03-21)
 
 ## [0.0.35](https://github.com/rdarida/texturepacker-cli/compare/v0.0.34...v0.0.35) (2026-03-17)
