@@ -1,6 +1,6 @@
 {
   "name": "texturepacker-cli",
-  "version": "0.0.40",
+  "version": "0.0.41",
   "description": "NodeJS command-line interface for TexturePacker",
   "keywords": [
     "texturepacker",
@@ -53,6 +53,6 @@
     "ts-jest": "^29.4.6",
     "tsup": "^8.5.1",
     "typedoc": "^0.28.15",
-    "typescript": "^5.7.2"
+    "typescript": "^6.0.3"
   }
 }
