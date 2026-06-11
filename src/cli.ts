@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
 
 import { pack, unpack } from '.';
 
-yargs
+yargs(hideBin(process.argv))
   .scriptName('texture')
   .usage('$0 <cmd> [args]')
   .command(
@@ -56,4 +57,6 @@ yargs
     }
   )
   .demandCommand(1, 'You need to specify a command: pack or unpack')
-  .help().argv;
+  .help()
+  .strict()
+  .parse();
