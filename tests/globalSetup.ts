@@ -1,13 +1,17 @@
-import { existsSync, mkdirSync } from 'fs';
+import { existsSync, mkdirSync } from 'node:fs';
+
 import { rimrafSync } from 'rimraf';
-// import { execSync } from 'child_process';
 
 import { TEMP_DIR } from './constants';
 
-export default function globalSetup(): void {
+export function setup(): void {
   if (existsSync(TEMP_DIR)) {
     rimrafSync(TEMP_DIR);
   }
 
   mkdirSync(TEMP_DIR, { recursive: true });
+}
+
+export function teardown(): void {
+  rimrafSync(TEMP_DIR);
 }
