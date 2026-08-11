@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.0.43](https://github.com/rdarida/texturepacker-cli/compare/v0.0.42...v0.0.43) (2026-08-11)
+
 ## [0.0.42](https://github.com/rdarida/texturepacker-cli/compare/v0.0.41...v0.0.42) (2026-06-11)
 
 ## [0.0.41](https://github.com/rdarida/texturepacker-cli/compare/v0.0.40...v0.0.41) (2026-06-11)
