@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import { AlphaHandling, Format } from '../src/enums';
 import { TexturePacker } from '../src/TexturePacker';
 
