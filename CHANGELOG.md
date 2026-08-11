@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.44](https://github.com/rdarida/texturepacker-cli/compare/v0.0.43...v0.0.44) (2026-08-11)
+
+### Bug Fixes
+
+* fix sonar version ([23d820f](https://github.com/rdarida/texturepacker-cli/commit/23d820fe070af3082f8ef9762a0d3eb16f00b1e0))
+
 ## [0.0.43](https://github.com/rdarida/texturepacker-cli/compare/v0.0.42...v0.0.43) (2026-08-11)
 
 ## [0.0.42](https://github.com/rdarida/texturepacker-cli/compare/v0.0.41...v0.0.42) (2026-06-11)
